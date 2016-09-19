@@ -1,0 +1,297 @@
+<style>
+td { 
+	padding-left: 12px;
+	padding-right: 12px;
+	padding-top: 7px;
+	padding-bottom: 2px;
+
+	font-family: "Euclid";
+}
+</style>
+
+<table style="text-align:center"><caption>Table 1: Summary statistics of ratings across wesbsites</caption>
+
+<tr><td colspan="6" style="border-bottom: 1px solid black"></td>
+<tr><td colspan="6" style="border-top: 1px solid black"></td>
+
+</tr><tr><td style="text-align:left"></td><td colspan="2">OpenTable</td><td colspan=2>TripAdvisor</td></tr>
+
+<tr><td colspan="6" style="border-bottom: 1px solid black"></td></tr>
+
+</tr><tr><td style="text-align:left"></td><td>Mean</td><td>Standard<br> deviation</td><td>Mean</td><td>Standard<br> deviation</td></tr>
+
+<tr><td colspan="6" style="border-bottom: 1px solid black"></td></tr>
+
+<tr><td style="text-align:left">Number of ratings</td><td>679.66</td><td>973.12</td><td>258.21</td><td>402.03</td></tr>
+
+<tr><td style="text-align:left">Average rating</td><td>4.25</td><td>0.60</td><td>4.12</td><td>0.30</td></tr>
+
+<tr><td style="text-align:left">Proportion of 1-star ratings</td><td>0.029</td> <td>0.028</td> <td>0.037</td> <td>0.038</td></tr>
+
+<tr><td colspan=6 style="border-bottom: 1px solid black"></td></tr>
+
+<tr> <td colspan=6 style="text-align:left"><em>Note:</em> These statistics are for 4,391 restaurants which are used in this<br> paper after dropping observations.</td> </tr>
+
+</table>
+
+<br>
+<br>
+<br>
+
+<table style="text-align:center"><caption>Table 2: Correlation Matrix of Competition Indices</caption>
+
+<tr><td colspan="6" style="border-bottom: 1px solid black"></td>
+<tr><td colspan="6" style="border-top: 1px solid black"></td>
+
+<tr><td style="text-align:left"></td><td>C<sub>i</sub><sup>G</sup></td><td>C<sub>i</sub><sup>P</sup></td><td>C<sub>i</sub><sup>T</sup></td><td>C<sub>i</sub><sup><span style="text-decoration: overline">T</span></sup></td><td>C<sub>i</sub><sup>R</sup></td></tr>
+<tr><td colspan="6" style="border-bottom: 1px solid black"></td></tr><tr><td style="text-align:left">C<sub>i</sub><sup>G</sup></td><td>1</td><td>0.727</td><td>0.839</td><td>0.973</td><td>0.746</td></tr>
+<tr><td style="text-align:left">C<sub>i</sub><sup>P</sup></td><td>0.727</td><td>1</td><td>0.618</td><td>0.722</td><td>0.534</td></tr>
+<tr><td style="text-align:left">C<sub>i</sub><sup>T</sup></td><td>0.839</td><td>0.618</td><td>1</td><td>0.773</td><td>0.616</td></tr>
+<tr><td style="text-align:left">C<sub>i</sub><sup><span style="text-decoration: overline">T</span></sup></td><td>0.973</td><td>0.722</td><td>0.773</td><td>1</td><td>0.703</td></tr>
+<tr><td style="text-align:left">C<sub>i</sub><sup>R</sup></td><td>0.746</td><td>0.534</td><td>0.616</td><td>0.703</td><td>1</td></tr>
+<tr><td colspan="6" style="border-bottom: 1px solid black"></td></tr>
+
+<!--
+<tr> <td colspan=6 style="text-align:left"><em>Note:</em> The correlation matrix reports correlations<br> between competition indices for 4,391 restaurants. </td> </tr>
+-->
+</table>
+
+
+<br>
+<br>
+<br>
+
+<table style="text-align:center"><caption>Table 3: Estimation Results for Equation (8)</caption>
+
+<tr><td colspan="6" style="border-bottom: 1px solid black"></td>
+<tr><td colspan="6" style="border-top: 1px solid black"></td>
+
+<tr><td style="text-align:left"></td><td colspan="3"><em>Dependent variable:</em> F1*<sub>i</sub><sup>TA</sup><br> </td></tr>
+
+<tr><td style="text-align:left"></td><td>(1)</td><td>(2)</td><td>(3)</td></tr>
+<tr><td colspan="4" style="border-bottom: 1px solid black"></td></tr><tr><td style="text-align:left">C<sub>i</sub><sup>G</sup> (General Index)</td><td>-0.123<sup>***</sup></td><td></td><td>0.007</td></tr>
+<tr><td style="text-align:left"></td><td>(0.026)</td><td></td><td>(0.085)</td></tr>
+<tr><td style="text-align:left"></td><td></td><td></td><td></td></tr>
+<tr><td style="text-align:left">C<sub>i</sub><sup>P</sup> (Price Index)</td><td>0.058<sup>***</sup></td><td>0.060<sup>***</sup></td><td>0.060<sup>***</sup></td></tr>
+<tr><td style="text-align:left"></td><td>(0.018)</td><td>(0.018)</td><td>(0.018)</td></tr>
+<tr><td style="text-align:left"></td><td></td><td></td><td></td></tr>
+<tr><td style="text-align:left">C<sub>i</sub><sup>T</sup> (Cuisine Type Index)</td><td></td><td>-0.035</td><td>-0.036</td></tr>
+<tr><td style="text-align:left"></td><td></td><td>(0.043)</td><td>(0.044)</td></tr>
+<tr><td style="text-align:left"></td><td></td><td></td><td></td></tr>
+<tr><td style="text-align:left">C<sub>i</sub><sup><span style="text-decoration: overline">T</span></sup> (Different Type Index)</td><td></td><td>-0.095<sup>**</sup></td><td>-0.101</td></tr>
+<tr><td style="text-align:left"></td><td></td><td>(0.040)</td><td>(0.080)</td></tr>
+<tr><td style="text-align:left"></td><td></td><td></td><td></td></tr>
+<tr><td style="text-align:left">C<sub>i</sub><sup>R</sup> (Ranking Index)</td><td>0.081<sup>***</sup></td><td>0.077<sup>***</sup></td><td>0.077<sup>***</sup></td></tr>
+<tr><td style="text-align:left"></td><td>(0.022)</td><td>(0.021)</td><td>(0.022)</td></tr>
+<tr><td style="text-align:left"></td><td></td><td></td><td></td></tr>
+<tr><td style="text-align:left">Q<sub>i</sub><sup>TA</sup> </td><td>-0.269<sup>***</sup></td><td>-0.270<sup>***</sup></td><td>-0.270<sup>***</sup></td></tr>
+<tr><td style="text-align:left"></td><td>(0.021)</td><td>(0.021)</td><td>(0.021)</td></tr>
+<tr><td style="text-align:left"></td><td></td><td></td><td></td></tr>
+<tr><td style="text-align:left">log(R<sub>i</sub><sup>TA</sup>)</td><td>0.099<sup>***</sup></td><td>0.101<sup>***</sup></td><td>0.101<sup>***</sup></td></tr>
+<tr><td style="text-align:left"></td><td>(0.021)</td><td>(0.021)</td><td>(0.022)</td></tr>
+<tr><td style="text-align:left"></td><td></td><td></td><td></td></tr>
+<tr><td style="text-align:left">PriceCategory<sub>i</sub><sup>OT</sup></td><td>0.121<sup>***</sup></td><td>0.122<sup>***</sup></td><td>0.122<sup>***</sup></td></tr>
+<tr><td style="text-align:left"></td><td></td><td></td><td></td></tr>
+<tr><td style="text-align:left"></td><td></td><td></td><td></td></tr>
+
+<tr><td style="text-align:left">Cusine type dummies?</td><td>YES</td><td>YES</td><td>YES</td></tr>
+<tr><td style="text-align:left"></td><td></td><td></td></tr>
+<tr><td style="text-align:left"></td><td></td><td></td></tr>
+
+<!--
+<tr><td style="text-align:left">CuisineN.fAnglo</td><td>-0.053</td><td>-0.046</td><td>-0.046</td></tr>
+<tr><td style="text-align:left"></td><td>(0.058)</td><td>(0.068)</td><td>(0.068)</td></tr>
+<tr><td style="text-align:left"></td><td></td><td></td><td></td></tr>
+<tr><td style="text-align:left">CuisineN.fAsia</td><td>0.029</td><td>0.037</td><td>0.037</td></tr>
+<tr><td style="text-align:left"></td><td>(0.065)</td><td>(0.070)</td><td>(0.070)</td></tr>
+<tr><td style="text-align:left"></td><td></td><td></td><td></td></tr>
+<tr><td style="text-align:left">CuisineN.fEurope</td><td>-0.002</td><td>-0.0004</td><td>-0.0003</td></tr>
+<tr><td style="text-align:left"></td><td>(0.062)</td><td>(0.062)</td><td>(0.062)</td></tr>
+<tr><td style="text-align:left"></td><td></td><td></td><td></td></tr>
+<tr><td style="text-align:left">CuisineN.fItaly</td><td>0.086</td><td>0.089</td><td>0.089</td></tr>
+<tr><td style="text-align:left"></td><td>(0.061)</td><td>(0.062)</td><td>(0.062)</td></tr>
+<tr><td style="text-align:left"></td><td></td><td></td><td></td></tr>
+<tr><td style="text-align:left">CuisineN.fLatin</td><td>-0.163<sup>**</sup></td><td>-0.166<sup>**</sup></td><td>-0.166<sup>**</sup></td></tr>
+<tr><td style="text-align:left"></td><td>(0.082)</td><td>(0.083)</td><td>(0.083)</td></tr>
+<tr><td style="text-align:left"></td><td></td><td></td><td></td></tr>
+<tr><td style="text-align:left">CuisineN.fMEastA</td><td>0.354<sup>**</sup></td><td>0.355<sup>**</sup></td><td>0.355<sup>**</sup></td></tr>
+<tr><td style="text-align:left"></td><td>(0.140)</td><td>(0.141)</td><td>(0.141)</td></tr>
+<tr><td style="text-align:left"></td><td></td><td></td><td></td></tr>
+<tr><td style="text-align:left">CuisineN.fNotFound</td><td>-0.089</td><td>-0.213</td><td>-0.219</td></tr>
+<tr><td style="text-align:left"></td><td>(0.131)</td><td>(0.135)</td><td>(0.174)</td></tr>
+<tr><td style="text-align:left"></td><td></td><td></td><td></td></tr>
+-->
+
+<tr><td style="text-align:left">Constant</td><td>0.176</td><td>0.171</td><td>0.171</td></tr>
+<tr><td style="text-align:left"></td><td>(0.116)</td><td>(0.118)</td><td>(0.118)</td></tr>
+<tr><td style="text-align:left"></td><td></td><td></td><td></td></tr>
+<tr><td colspan="4" style="border-bottom: 1px solid black"></td></tr><tr><td style="text-align:left">Observations</td><td>4,391</td><td>4,391</td><td>4,391</td></tr>
+<tr><td style="text-align:left">R<sup>2</sup></td><td>0.089</td><td>0.090</td><td>0.090</td></tr>
+<tr><td colspan="4" style="border-bottom: 1px solid black"></td></tr>
+
+<tr><td style="text-align:left" colspan="2"><em>Note:</em> Heteroskedasticity robust standard errors in parentheses.</td><td colspan="2" style="text-align:right"><sup>*</sup>p<0.1; <sup>**</sup>p<0.05; <sup>***</sup>p<0.01</td></tr>
+
+</table>
+
+<br>
+<br>
+<br>
+
+<table style="text-align:center"><caption>Table 4: Robustness Specification with No Controls</caption>
+
+<tr><td colspan="6" style="border-bottom: 1px solid black"></td>
+<tr><td colspan="6" style="border-top: 1px solid black"></td>
+
+<tr><td style="text-align:left"></td><td colspan="3"><em>Dependent variable:</em> F1*<sub>i</sub><sup>TA</sup><br> </td></tr>
+<tr><td style="text-align:left"></td><td>(1)</td><td>(2)</td></tr>
+
+<tr><td colspan="3" style="border-bottom: 1px solid black"></td></tr><tr><td style="text-align:left">C<sub>i</sub><sup>G</sup> (General Index)</td><td>-0.098<sup>*</sup></td><td>0.007</td></tr>
+<tr><td style="text-align:left"></td><td>(0.058)</td><td>(0.085)</td></tr>
+<tr><td style="text-align:left"></td><td></td><td></td></tr>
+<tr><td style="text-align:left">C<sub>i</sub><sup>P</sup> (Price Index)</td><td>0.058<sup>***</sup></td><td>0.060<sup>***</sup></td></tr>
+<tr><td style="text-align:left"></td><td>(0.018)</td><td>(0.018)</td></tr>
+<tr><td style="text-align:left"></td><td></td><td></td></tr>
+<tr><td style="text-align:left">C<sub>i</sub><sup>T</sup> (Cuisine Type Index)</td><td>-0.019</td><td>-0.036</td></tr>
+<tr><td style="text-align:left"></td><td>(0.030)</td><td>(0.044)</td></tr>
+<tr><td style="text-align:left"></td><td></td><td></td></tr>
+<tr><td style="text-align:left">C<sub>i</sub><sup><span style="text-decoration: overline">T</span></sup> (Different Type Index)</td><td>0.010</td><td>-0.101</td></tr>
+<tr><td style="text-align:left"></td><td>(0.051)</td><td>(0.080)</td></tr>
+<tr><td style="text-align:left"></td><td></td><td></td></tr>
+<tr><td style="text-align:left">C<sub>i</sub><sup>R</sup> (Ranking Index)</td><td>0.073<sup>***</sup></td><td>0.077<sup>***</sup></td></tr>
+<tr><td style="text-align:left"></td><td>(0.022)</td><td>(0.022)</td></tr>
+<tr><td style="text-align:left"></td><td></td><td></td></tr>
+
+<!--
+<tr><td style="text-align:left">Q<sub>i</sub><sup>TA</sup> </td><td>-0.253<sup>***</sup></td><td>-0.270<sup>***</sup></td></tr>
+<tr><td style="text-align:left"></td><td>(0.021)</td><td>(0.021)</td></tr>
+<tr><td style="text-align:left"></td><td></td><td></td></tr>
+<tr><td style="text-align:left">log(R<sub>i</sub><sup>TA</sup>)</td><td>0.117<sup>***</sup></td><td>0.101<sup>***</sup></td></tr>
+<tr><td style="text-align:left"></td><td>(0.021)</td><td>(0.022)</td></tr>
+<tr><td style="text-align:left"></td><td></td><td></td></tr>
+<tr><td style="text-align:left">PriceCategory<sub>i</sub><sup>OT</sup></td><td></td><td>0.122<sup>***</sup></td></tr>
+<tr><td style="text-align:left"></td><td></td><td>(0.025)</td></tr>
+<tr><td style="text-align:left"></td><td></td><td></td></tr>
+
+
+<tr><td style="text-align:left">Cusine type dummies?</td><td>YES</td><td>YES</td></tr>
+<tr><td style="text-align:left"></td><td></td><td></td></tr>
+<tr><td style="text-align:left"></td><td></td><td></td></tr>
+
+
+<tr><td style="text-align:left">CuisineN.fAnglo</td><td></td><td>-0.046</td></tr>
+<tr><td style="text-align:left"></td><td></td><td>(0.068)</td></tr>
+<tr><td style="text-align:left"></td><td></td><td></td></tr>
+<tr><td style="text-align:left">CuisineN.fAsia</td><td></td><td>0.037</td></tr>
+<tr><td style="text-align:left"></td><td></td><td>(0.070)</td></tr>
+<tr><td style="text-align:left"></td><td></td><td></td></tr>
+<tr><td style="text-align:left">CuisineN.fEurope</td><td></td><td>-0.0003</td></tr>
+<tr><td style="text-align:left"></td><td></td><td>(0.062)</td></tr>
+<tr><td style="text-align:left"></td><td></td><td></td></tr>
+<tr><td style="text-align:left">CuisineN.fItaly</td><td></td><td>0.089</td></tr>
+<tr><td style="text-align:left"></td><td></td><td>(0.062)</td></tr>
+<tr><td style="text-align:left"></td><td></td><td></td></tr>
+<tr><td style="text-align:left">CuisineN.fLatin</td><td></td><td>-0.166<sup>**</sup></td></tr>
+<tr><td style="text-align:left"></td><td></td><td>(0.083)</td></tr>
+<tr><td style="text-align:left"></td><td></td><td></td></tr>
+<tr><td style="text-align:left">CuisineN.fMEastA</td><td></td><td>0.355<sup>**</sup></td></tr>
+<tr><td style="text-align:left"></td><td></td><td>(0.141)</td></tr>
+<tr><td style="text-align:left"></td><td></td><td></td></tr>
+<tr><td style="text-align:left">CuisineN.fNotFound</td><td></td><td>-0.219</td></tr>
+<tr><td style="text-align:left"></td><td></td><td>(0.174)</td></tr>
+<tr><td style="text-align:left"></td><td></td><td></td></tr>
+
+
+<tr><td style="text-align:left">Constant</td><td>0.397<sup>***</sup></td><td>0.171</td></tr>
+<tr><td style="text-align:left"></td><td>(0.095)</td><td>(0.118)</td></tr>
+<tr><td style="text-align:left"></td><td></td><td></td></tr>
+-->
+
+<tr><td colspan="3" style="border-bottom: 1px solid black"></td></tr><tr><td style="text-align:left">Observations</td><td>4,391</td><td>4,391</td></tr>
+<tr><td style="text-align:left">R<sup>2</sup></td><td>0.078</td><td>0.090</td></tr>
+
+<tr><td colspan="3" style="border-bottom: 1px solid black"></td></tr>
+
+<tr><td style="text-align:left" colspan="2"><em>Note:</em> Heteroskedasticity robust standard errors<br> in parentheses.</td><td colspan="1" style="text-align:right"><sup>*</sup>p<0.1; <sup>**</sup>p<0.05; <sup>***</sup>p<0.01</td></tr>
+</table>
+
+<br>
+<br>
+<br>
+
+
+
+<table style="text-align:center"><caption>Table 5: Robustness to kernel bandwidth and kernel functions.</caption>
+<tr><td colspan="6" style="border-bottom: 1px solid black"></td>
+<tr><td colspan="6" style="border-top: 1px solid black"></td>
+
+<tr><td style="text-align:left"></td><td colspan="3"><em>Dependent variable:</em> F1*<sub>i</sub><sup>TA</sup><br> </td></tr>
+
+<tr><td style="text-align:left"></td><td>(1)</td><td>(2)</td><td>(3)</td></tr>
+
+<tr><td style="text-align:left"></td><td>h = 0.5</td><td>h = 1.5</td><td>Gaussian<br> Kernel</td></tr>
+<tr><td colspan="4" style="border-bottom: 1px solid black"></td></tr>
+
+<tr><td style="text-align:left">C<sub>i</sub><sup>G</sup> (General Index)</td><td>-0.029</td><td>0.031</td><td>-0.044</td></tr>
+<tr><td style="text-align:left"></td><td>(0.084)</td><td>(0.085)</td><td>(0.095)</td></tr>
+<tr><td style="text-align:left"></td><td></td><td></td><td></td></tr>
+<tr><td style="text-align:left">C<sub>i</sub><sup>P</sup> (Price Index)</td><td>0.055<sup>***</sup></td><td>0.060<sup>***</td><td>0.060<sup>***</sup></td></tr>
+<tr><td style="text-align:left"></td><td>(0.018)</td><td>(0.018)</td><td>(0.018)</td></tr>
+<tr><td style="text-align:left"></td><td></td><td></td><td></td></tr>
+<tr><td style="text-align:left">C<sub>i</sub><sup>T</sup> (Cuisine Type Index)</td><td>-0.024</td><td>-0.040</td><td>0.003</td></tr>
+<tr><td style="text-align:left"></td><td>(0.044)</td><td>(0.043)</td><td>(0.004)</td></tr>
+<tr><td style="text-align:left"></td><td></td><td></td><td></td></tr>
+<tr><td style="text-align:left">C<sub>i</sub><sup><span style="text-decoration: overline">T</span></sup> (Different Type Index)</td><td>-0.040</td><td>-0.133<sup>*</sup></td><td>-0.075</td></tr>
+<tr><td style="text-align:left"></td><td>(0.078)</td><td>(0.080)</td><td>(0.090)</td></tr>
+<tr><td style="text-align:left"></td><td></td><td></td><td></td></tr>
+<tr><td style="text-align:left">C<sub>i</sub><sup>R</sup> (Ranking Index)</td><td>0.044<sup>*</sup></td><td>0.083<sup>***</sup></td><td>0.073<sup>***</sup></td></tr>
+<tr><td style="text-align:left"></td><td>(0.023)</td><td>(0.022)</td><td>(0.024)</td></tr>
+<tr><td style="text-align:left"></td><td></td><td></td><td></td></tr>
+
+
+<!--
+<tr><td style="text-align:left">Q<sub>i</sub><sup>TA</sup> </td><td>-0.267<sup>***</sup></td><td>-0.272<sup>***</sup></td><td>-0.268<sup>***</sup></td></tr>
+<tr><td style="text-align:left"></td><td>(0.021)</td><td>(0.021)</td><td>(0.021)</td></tr>
+<tr><td style="text-align:left"></td><td></td><td></td><td></td></tr>
+<tr><td style="text-align:left">log(R<sub>i</sub><sup>TA</sup>)</td><td>0.095<sup>***</sup></td><td>0.107<sup>***</sup></td><td>0.099<sup>***</sup></td></tr>
+<tr><td style="text-align:left"></td><td>(0.022)</td><td>(0.022)</td><td>(0.021)</td></tr>
+<tr><td style="text-align:left"></td><td></td><td></td><td></td></tr>
+<tr><td style="text-align:left">PriceCategory<sub>i</sub><sup>OT</sup></td><td>0.117<sup>***</sup></td><td>0.125<sup>***</sup></td><td>0.121<sup>***</sup></td></tr>
+<tr><td style="text-align:left"></td><td>(0.025)</td><td>(0.025)</td><td>(0.025)</td></tr>
+<tr><td style="text-align:left"></td><td></td><td></td><td></td></tr>
+
+
+
+<tr><td style="text-align:left">Cusine type dummies?</td><td>YES</td><td>YES</td><td>YES</td></tr>
+<tr><td style="text-align:left"></td><td></td><td></td></tr>
+<tr><td style="text-align:left"></td><td></td><td></td></tr>
+
+
+
+
+<tr><td style="text-align:left">Constant</td><td>0.214<sup>*</sup></td><td>0.141</td><td>0.190</td></tr>
+<tr><td style="text-align:left"></td><td>(0.116)</td><td>(0.120)</td><td>(0.116)</td></tr>
+<tr><td style="text-align:left"></td><td></td><td></td><td></td></tr>
+
+-->
+
+<tr><td colspan="4" style="border-bottom: 1px solid black"></td></tr><tr><td style="text-align:left">Observations</td><td>4,391</td><td>4,391</td><td>4,391</td></tr>
+<tr><td style="text-align:left">R<sup>2</sup></td><td>0.087</td><td>0.091</td><td>0.089</td></tr>
+<tr><td colspan="4" style="border-bottom: 1px solid black"></td></tr><tr><td style="text-align:left" colspan="2"><em>Note:</em> Heteroskedasticity robust standard errors <br>in parentheses.</td><td colspan="2" style="text-align:right"><sup>*</sup>p<0.1; <sup>**</sup>p<0.05; <sup>***</sup>p<0.01</td></tr>
+</table>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
