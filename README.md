@@ -2,9 +2,9 @@
 
 Winner of the University Prize for ‘Best Performance in Research in Applied Economics’ (£150), awarded a grade of 89%. 
 
-##Project structure: 
+## Project structure: 
 
-###Data Collection in Python : Python 3 scripts to scrape ratings from OpenTable restaurants and to map restaurants with pages on TripAdvisor and scrape data from there. Stack: PhantomJS, Selenium, BeautifulSoup and OpenPyxl.
+### Data Collection in Python : Python 3 scripts to scrape ratings from OpenTable restaurants and to map restaurants with pages on TripAdvisor and scrape data from there. Stack: PhantomJS, Selenium, BeautifulSoup and OpenPyxl.
 
 - OTLinks.py assembles a dataset containing all OpenTable restaurant page links and basic info for a given city. 
 - OTData.py scrables the restaurant webpages and parses them and stores them in a csv file. 
@@ -16,9 +16,9 @@ Winner of the University Prize for ‘Best Performance in Research in Applied Ec
 
 To avoid getting your IP blocked, consider using AWS EC2 instances.
 
-###CSV Data Files : data tables with restaurant level rating data for a set of cities in the US from both TripAdvisor and OpenTable. 
+### CSV Data Files : data tables with restaurant level rating data for a set of cities in the US from both TripAdvisor and OpenTable. 
 
-###Modelling in R: 
+### Modelling in R: 
 
 - buildDataset.r reads in the csv files, cleans the data and constructs variables. Saves the dataset to data.csv. 
 
