@@ -37,5 +37,5 @@ In any given city:
 
 ## Outcome
 
-Winner of the University Prize for ‘Best Performance in Research in Applied Economics’ (£150), awarded a grade of 89%. 
+Winner of the University Prize for ‘Best Performance in Research in Applied Economics’ (£150), awarded a grade of 87%. 
 
