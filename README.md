@@ -9,10 +9,10 @@ We investigate fake online ratings which are posted by restaurant on their compe
 ### 1. Data Collection in Python : Python 3 scripts to scrape ratings from OpenTable restaurants and to map restaurants with pages on TripAdvisor and scrape data from there. Stack: PhantomJS, Selenium, BeautifulSoup and OpenPyxl.
 
 - OTLinks.py assembles a dataset containing all OpenTable restaurant page links and basic info for a given city. 
-- OTData.py scrables the restaurant webpages and parses them and stores them in a csv file. 
+- OTData.py scrapes the restaurant webpages and parses them and stores them in a csv file. 
 
 - TALinks.py assembles a dataset containing all TripAdvisor restaurant page links and basic info for a given city. 
-- TAData.py scrables the restaurant webpages and parses them and stores them in a csv file. 
+- TAData.py scrapes the restaurant webpages and parses them and stores them in a csv file. 
 
 - OTTAMap.py matches the restaurants from both sources by comparing a number of features including phone number, location coordinates and address .
 
